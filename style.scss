@@ -63,10 +63,26 @@ body{
     gap: 2rem;
     margin-top: 2rem;
 }
-#button_arrow_right{
+#button_arrow_right, #button_arrow_left{
     border: none;
     outline: none;
     background-color: #0015ff00;
+}
+#button_arrow_right:hover{
+    background-color: #ffffff57;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+}
+#button_arrow_left:hover{
+    background-color: #ffffff57;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
 }
 .bx{
     font-size: 2rem;
