@@ -52,3 +52,18 @@ function ShowContent(Shown_content){
     semi_heading.textContent=content.job;
     text.textContent=content.tittle;
 }
+next_btn.addEventListener('click',()=>{
+    countdown++;
+    if(countdown >elements.length -1){
+        countdown=0;
+    }
+    ShowContent(countdown);
+})
+
+previews_btn.addEventListener("click",()=>{
+    countdown--;
+    if(countdown<0){
+       countdown= elements.length -1;
+    }
+    ShowContent(countdown)
+})
